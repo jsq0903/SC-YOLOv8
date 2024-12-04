@@ -10,9 +10,9 @@
 # 2.Usage
 ## 2.1 Prepare the Dataset
 
-### lengzha/         # https://github.com/jsq0903/CR7-DET.
-### GC10-DET/        # https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets.git
-### NEU-DET/         # https://drive.google.com/file/d/1qrdZlaDi272eA79b0uCwwqPrm2Q_WI3k/view?pli=1
+-lengzha/         # https://github.com/jsq0903/CR7-DET.
+-GC10-DET/        # https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets.git
+-NEU-DET/         # https://drive.google.com/file/d/1qrdZlaDi272eA79b0uCwwqPrm2Q_WI3k/view?pli=1
 '''
     ├── image/       # Contains .jpg images of steel strips
     │   ├── dents1.jpg
