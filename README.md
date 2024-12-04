@@ -27,18 +27,18 @@
 ## 2.2 Train the Model
     python train.py 
 
-from ultralytics import YOLO
-import os
-os.environ["GIT_PYTHON_REFRESH"] = "quiet"
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+    from ultralytics import YOLO
+    import os
+    os.environ["GIT_PYTHON_REFRESH"] = "quiet"
+    os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-if __name__ == '__main__':
-
-   
-    model = YOLO('yolov8n.pt')                                              # 权重设置
-    model = YOLO('yolov8n.yaml')                                          # 模型架构
-    results = model.train(data='lengzha.yaml', epochs=300)
-
+    if __name__ == '__main__':
+    
+        model = YOLO('yolov8n.pt')                                            # 权重设置
+        model = YOLO('yolov8n.yaml')                                          # 模型架构---SC-YOLOv8/ultralytics/cfg/models/v8/yolov8.yaml
+        results = model.train(data='lengzha.yaml', epochs=300)                # 参数设置---SC-YOLOv8/ultralytics/cfg/default.yaml or model.train(参数='',里面自行设置)
+                                                                              # lengzha.yaml, GC10-DET.yaml, NEU-DET.yaml---SC-YOLOv8/ultralytics/cfg/datasets
+                                                                              
 ## 2.3 Evaluate the model
     python val.py 
 
