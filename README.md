@@ -42,7 +42,7 @@
                                                                               # lengzha.yaml, GC10-DET.yaml, NEU-DET.yaml---SC-YOLOv8/ultralytics/cfg/datasets
                                                                               
 ## 2.3 Evaluate the model
-    python val.py 
+    python test.py 
 
 
 
