@@ -24,6 +24,18 @@ lengzha/
 │   ├── dents2.txt
 │   └── ...
 
-lengzha/ ├── image/ # 存放冷轧带钢的图像文件 (.jpg 格式) │ ├── steel_strip_001.jpg │ ├── steel_strip_002.jpg │ └── ... ├── label/ # 存放与图像对应的标注文件 (.txt 格式) │ ├── steel_strip_001.txt │ ├── steel_strip_002.txt │ └── ...
+# 数据集结构
+
+- `dataset/`
+  - `images/`          # 图像文件夹
+    - `image1.jpg`
+    - `image2.jpg`
+    - `image3.jpg`
+  - `labels/`          # 标注文件夹
+    - `image1.json`
+    - `image2.json`
+    - `image3.json`
+  - `README.md`        # 数据集说明文件
+
 
 
