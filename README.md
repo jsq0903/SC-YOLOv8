@@ -16,12 +16,14 @@
 
 lengzha/
 ├── image/       # 存放冷轧带钢的图像文件 (.jpg 格式)
-│   ├── steel_strip_001.jpg
-│   ├── steel_strip_002.jpg
+│   ├── dents1.jpg
+│   ├── dents2.jpg
 │   └── ...
 ├── label/       # 存放与图像对应的标注文件 (.txt 格式)
-│   ├── steel_strip_001.txt
-│   ├── steel_strip_002.txt
+│   ├── dents1.txt
+│   ├── dents2.txt
 │   └── ...
+
+lengzha/ ├── image/ # 存放冷轧带钢的图像文件 (.jpg 格式) │ ├── steel_strip_001.jpg │ ├── steel_strip_002.jpg │ └── ... ├── label/ # 存放与图像对应的标注文件 (.txt 格式) │ ├── steel_strip_001.txt │ ├── steel_strip_002.txt │ └── ...
 
 
