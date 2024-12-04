@@ -14,9 +14,17 @@
 - GC10-DET/        # https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets.git
 - NEU-DET/         # https://drive.google.com/file/d/1qrdZlaDi272eA79b0uCwwqPrm2Q_WI3k/view?pli=1
 
-# 数据集结构
+- `dataset/`
+  - `images/`          # 图像文件夹
+    - `image1.jpg`
+    - `image2.jpg`
+    - `image3.jpg`
+  - `labels/`          # 标注文件夹
+    - `image1.json`
+    - `image2.json`
+    - `image3.json`
+  
 
-dataset/ │ ├── images/ # 图像文件夹 │ ├── image1.jpg │ ├── image2.jpg │ └── image3.jpg │ ├── labels/ # 标注文件夹 │ ├── image1.json │ ├── image2.json │ └── image3.json │ └── README.md # 数据集说明文件
 
 
 
