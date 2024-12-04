@@ -27,6 +27,7 @@
 ## 2.2 Train the Model
     python train.py 
 
+------------------------------------------
 
     from ultralytics import YOLO
     import os
