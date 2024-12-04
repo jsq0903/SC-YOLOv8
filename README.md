@@ -16,13 +16,13 @@
 
 - `dataset/`
   - `images/`          # 图像文件夹
-    - `image1.jpg`
-    - `image2.jpg`
-    - `image3.jpg`
+    - `dents1.jpg`
+    - `dents2.jpg`
+    - `.....`
   - `labels/`          # 标注文件夹
-    - `image1.json`
-    - `image2.json`
-    - `image3.json`
+    - `dents1.txt`
+    - `dents2.txt`
+    - `.....`
   
 
 
