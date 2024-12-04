@@ -1,0 +1,12 @@
+
+# 设置存放路径
+train: E:/data/dataest/GC10-DET/images/train/
+test:  E:/data/dataest/GC10-DET/images/test/
+val:  E:/data/dataest/GC10-DET/images/val/
+
+# number of classes
+nc: 10
+
+# class names
+names: ["1_chongkong","2_hanfeng","3_yueyawan","4_shuiban","5_youban","6_siban","7_yiwu","8_yahen","9_zhehen","10_yaozhe"]
+

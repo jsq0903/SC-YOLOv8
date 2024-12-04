@@ -1,0 +1,12 @@
+# 路径设置
+
+train: E:/data/dataest/NEU-DET/images/train/
+test:  E:/data/dataest/NEU-DET/images/test/
+val:  E:/data/dataest/NEU-DET/images/val/
+
+# number of classes
+nc: 6
+
+# class names
+names: ['inclusion','crazing','patches','pitted_surface','rolled-in_scale','scratches']
+
