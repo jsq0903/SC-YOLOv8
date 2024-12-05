@@ -76,8 +76,7 @@ Make sure the paths to your datasets in the YAML file match the folder structure
      os.environ["GIT_PYTHON_REFRESH"] = "quiet"
      os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
     if __name__ == '__main__':
-    # Load the trained model (best.pt file)
-    model = YOLO('')  # Path to the trained model (best.pt)
+    model = YOLO('')  # Load the trained model (best.pt file). Note: The best.pt file is not included in this directory; you need to run the training first to generate it.
     metrics = model.val(split='test', data='CR7-DET.yaml')  # Evaluate the model on the test set using CR7-DET.yaml configuration
 
 
