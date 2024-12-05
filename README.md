@@ -73,20 +73,15 @@ if __name__ == '__main__':
 ## 2.4 Evaluate the model
     python test.py 
     
-CODE:
-
+# Evaluate the model on the test dataset
 from ultralytics import YOLO
-
 import os
-
 os.environ["GIT_PYTHON_REFRESH"] = "quiet"
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 if __name__ == '__main__':
     # Load the trained model (best.pt file)
     model = YOLO('')  # Path to the trained model (best.pt)
-    
- # Evaluate the model on the test dataset
     metrics = model.val(split='test', data='CR7-DET.yaml')  # Evaluate the model on the test set using CR7-DET.yaml configuration
 
 
