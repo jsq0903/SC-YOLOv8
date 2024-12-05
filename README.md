@@ -44,7 +44,7 @@ val:    E:/data/dataest/CR7-DET/images/val/
 Make sure the paths to your datasets in the YAML file match the folder structure you’ve created on your local machine.
 ## 2.3 Train the Model
      python train.py
-
+code：
      from ultralytics import YOLO
      import os
      os.environ["GIT_PYTHON_REFRESH"] = "quiet"
@@ -70,6 +70,8 @@ Make sure the paths to your datasets in the YAML file match the folder structure
                                                                               
 ## 2.4 Evaluate the model
      python test.py 
+     
+     code：
      from ultralytics import YOLO
      import os
      os.environ["GIT_PYTHON_REFRESH"] = "quiet"
