@@ -1,6 +1,6 @@
 A High-Precision And Real-Time Lightweight Detection Model for Small Defects in Cold-Rolled Steel
 
-#1. Installation and Usage Instructions
+# 1. Installation
 ## 1.1 Clone the Repository
      https://github.com/jsq0903/SC-YOLOv8.git
      
@@ -45,8 +45,6 @@ Make sure the paths to your datasets in the YAML file match the folder structure
 ## 2.3 Train the Model
 To start training the model, use the train.py
 
-Code:
-
 from ultralytics import YOLO
 import os
 os.environ["GIT_PYTHON_REFRESH"] = "quiet"
@@ -72,8 +70,7 @@ if __name__ == '__main__':
                                                                               
 ## 2.4 Evaluate the model
     python test.py 
-    
-# Evaluate the model on the test dataset
+
 from ultralytics import YOLO
 import os
 os.environ["GIT_PYTHON_REFRESH"] = "quiet"
