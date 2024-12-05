@@ -70,8 +70,7 @@ code：
                                                                               
 ## 2.4 Evaluate the model
      python test.py 
-     
-     code：
+------------
      from ultralytics import YOLO
      import os
      os.environ["GIT_PYTHON_REFRESH"] = "quiet"
