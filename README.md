@@ -24,26 +24,42 @@ Once downloaded, organize your dataset folder as follows:
     - `dents1.txt`
     - `dents2.txt`
     - `.....`
+## 2.2 Update the Path to the Dataset YAML File
+After downloading and organizing your dataset, you need to specify the path to your dataset YAML file. The YAML file contains the necessary configuration and paths for the dataset.
 
-## 2.2 Train the Model
-To start training the model, use the following Python code:
-    python train.py 
+For CR7-DET, use lengzha.yaml.
+For GC10-DET, use GC10-DET.yaml.
+For NEU-DET, use NEU-DET.yaml.
+These YAML files can be found in the following directory: SC-YOLOv8/ultralytics/cfg/datasets/
+## 2.3 Train the Model
+To start training the model, use the train.py
 
-------------------------------------------
+Python code:
 
-    from ultralytics import YOLO
-    import os
-    os.environ["GIT_PYTHON_REFRESH"] = "quiet"
-    os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+from ultralytics import YOLO
+import os
+os.environ["GIT_PYTHON_REFRESH"] = "quiet"
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     
-        model = YOLO('yolov8n.pt')                                            #  # Load model weights or configuration file. Using pretrained weights
-        model = YOLO('yolov8n.yaml')                                          # 模型架构---SC-YOLOv8/ultralytics/cfg/models/v8/yolov8.yaml
-        results = model.train(data='lengzha.yaml', epochs=200,batch size=16)                # 参数设置---SC-YOLOv8/ultralytics/cfg/default.yaml or model.train(参数='',里面自行设置)
-                                                                              # lengzha.yaml, GC10-DET.yaml, NEU-DET.yaml---SC-YOLOv8/ultralytics/cfg/datasets
+    # Load model with pretrained weights or configuration file
+    model = YOLO('yolov8n.pt')   # Using pretrained weights (can also choose yolov8n.yaml for architecture)
+    
+    # Alternatively, load a specific model configuration
+    model = YOLO('yolov8-our.yaml')  # For our SC-YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-our.yaml
+    # model = YOLO('yolov8n.yaml')  # For a basic YOLOv8 model, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8n.yaml
+    # model = YOLO('yolov8-cbam.yaml')  # For CBAM-enhanced YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-cbam.yaml
+    # model = YOLO('yolov8-dsconv.yaml')  # For DSConv-enhanced YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-dsconv.yaml
+
+    # Start training the model with specified parameters
+    results = model.train(
+        data='lengzha.yaml',       # Path to dataset YAML:SC-YOLOv8/ultralytics/cfg/datasets/lengzha.yaml(GC10-DET.yaml or NEU-DET.yaml)
+        epochs=200,                # Number of epochs to train for
+        batch_size=16              # Batch size
+    )                              #additional hyperparameters and settings from SC-YOLOv8/ultralytics/cfg/default.yaml
                                                                               
-## 2.3 Evaluate the model
+## 2.4 Evaluate the model
     python test.py 
 
 
