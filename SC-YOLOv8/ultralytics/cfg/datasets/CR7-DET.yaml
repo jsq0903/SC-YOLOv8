@@ -10,7 +10,7 @@
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 train: E:/data/dataest/CR7-DET/images/train/
 test:  E:/data/dataest/CR7-DET/images/test/
-val:  E:/data/dataest/CR7-DET/images/val/
+val:  E:/data/dataest/CR7-DET/images/val/  #Make sure to adjust the paths according to your actual directory structure.
 
 # number of classes
 nc: 7
