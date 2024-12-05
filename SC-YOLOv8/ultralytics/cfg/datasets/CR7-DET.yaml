@@ -8,9 +8,9 @@
 #     └── coco128  ← downloads here (7 MB)
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-train: E:/data/dataest/lengzha/images/train/
-test:  E:/data/dataest/lengzha/images/test/
-val:  E:/data/dataest/lengzha/images/val/
+train: E:/data/dataest/CR7-DET/images/train/
+test:  E:/data/dataest/CR7-DET/images/test/
+val:  E:/data/dataest/CR7-DET/images/val/
 
 # number of classes
 nc: 7
