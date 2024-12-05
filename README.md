@@ -24,7 +24,7 @@ Once downloaded, organize your dataset folder as follows:
     - `dents1.txt`
     - `dents2.txt`
     - `.....`
-## 2.2 Update the Path to the Dataset YAML File
+## 2.2 Organize Your Dataset Into Train, Test, and Validation Sets
 After downloading and organizing your dataset, you need to specify the path to your dataset YAML file. The YAML file contains the necessary configuration and paths for the dataset.
 
 For CR7-DET, use CR7-DET.yaml.
@@ -32,11 +32,16 @@ For GC10-DET, use GC10-DET.yaml.
 For NEU-DET, use NEU-DET.yaml.
 These YAML files can be found in the following directory: SC-YOLOv8/ultralytics/cfg/datasets/
 
+You must split your dataset into three parts: training set, testing set, and validation set. Place the images into the respective folders and update the paths accordingly. For example:
 
+train:  E:/data/dataest/CR7-DET/images/train/
+test:   E:/data/dataest/CR7-DET/images/test/
+val:    E:/data/dataest/CR7-DET/images/val/
+Make sure the paths to your datasets in the YAML file match the folder structure you’ve created on your local machine.
 ## 2.3 Train the Model
 To start training the model, use the train.py
 
-Python code:
+Code:
 
 from ultralytics import YOLO
 import os
