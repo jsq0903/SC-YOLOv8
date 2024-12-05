@@ -10,7 +10,7 @@ A High-Precision And Real-Time Lightweight Detection Model for Small Defects in 
 # 2. Usage
 ## 2.1 Prepare the Dataset
 
-- lengzha/         # https://github.com/jsq0903/CR7-DET.
+- CR7-DET/         # https://github.com/jsq0903/CR7-DET.
 - GC10-DET/        # https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets.git
 - NEU-DET/         # https://drive.google.com/file/d/1qrdZlaDi272eA79b0uCwwqPrm2Q_WI3k/view?pli=1
   
@@ -27,10 +27,12 @@ Once downloaded, organize your dataset folder as follows:
 ## 2.2 Update the Path to the Dataset YAML File
 After downloading and organizing your dataset, you need to specify the path to your dataset YAML file. The YAML file contains the necessary configuration and paths for the dataset.
 
-For CR7-DET, use lengzha.yaml.
+For CR7-DET, use CR7-DET.yaml.
 For GC10-DET, use GC10-DET.yaml.
 For NEU-DET, use NEU-DET.yaml.
 These YAML files can be found in the following directory: SC-YOLOv8/ultralytics/cfg/datasets/
+
+
 ## 2.3 Train the Model
 To start training the model, use the train.py
 
