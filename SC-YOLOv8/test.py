@@ -5,6 +5,6 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 if __name__ == '__main__':
 
-    model = YOLO('')                                                      # 训练集上训练好的best.pt 
-    metrics = model.val(split='test',data='CR7-DET.yaml')  # 在测试集上评估模型
+    model = YOLO('')         # Load the trained model (best.pt file)
+    metrics = model.val(split='test',data='CR7-DET.yaml') # Evaluate the model on the test using CR7-DET.yaml
 
