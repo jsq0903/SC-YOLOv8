@@ -7,7 +7,7 @@ if __name__ == '__main__':
 
    
     model = YOLO('yolov8n.pt')                                              # 权重设置
-    model = YOLO('yolov8n.yaml')                                          # 模型架构
-    results = model.train(data='lengzha.yaml', epochs=300)    # 超参数设置
+    model = YOLO('yolov8.yaml')                                          # 模型架构
+    results = model.train(data='lengzha.yaml', epochs=300, batch size=16)    # 超参数设置
 
 
