@@ -43,23 +43,23 @@ val:    E:/data/dataest/CR7-DET/images/val/
 
 Make sure the paths to your datasets in the YAML file match the folder structure you’ve created on your local machine.
 ## 2.3 Train the Model
-python train.py
+     python train.py
 
-from ultralytics import YOLO
-import os
-os.environ["GIT_PYTHON_REFRESH"] = "quiet"
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+     from ultralytics import YOLO
+     import os
+     os.environ["GIT_PYTHON_REFRESH"] = "quiet"
+     os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-if __name__ == '__main__':
+     if __name__ == '__main__':
     
-    # Load model with pretrained weights or configuration file
-    model = YOLO('yolov8n.pt')   # Using pretrained weights 
+     # Load model with pretrained weights or configuration file
+     model = YOLO('yolov8n.pt')   # Using pretrained weights 
     
-    # Alternatively, load a specific model configuration
-    model = YOLO('yolov8-our.yaml')  # For our SC-YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-our.yaml
-    # model = YOLO('yolov8n.yaml')  # For a basic YOLOv8 model, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8n.yaml
-    # model = YOLO('yolov8-cbam.yaml')  # For CBAM-enhanced YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-cbam.yaml
-    # model = YOLO('yolov8-dsconv.yaml')  # For DSConv-enhanced YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-dsconv.yaml
+     # Alternatively, load a specific model configuration
+     model = YOLO('yolov8-our.yaml')  # For our SC-YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-our.yaml
+     # model = YOLO('yolov8n.yaml')  # For a basic YOLOv8 model, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8n.yaml
+     # model = YOLO('yolov8-cbam.yaml')  # For CBAM-enhanced YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-cbam.yaml
+     # model = YOLO('yolov8-dsconv.yaml')  # For DSConv-enhanced YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-dsconv.yaml
 
     # Start training the model with specified parameters
     results = model.train(
@@ -69,14 +69,13 @@ if __name__ == '__main__':
     )                              #additional hyperparameters and settings from SC-YOLOv8/ultralytics/cfg/default.yaml
                                                                               
 ## 2.4 Evaluate the model
-python test.py 
-if name == 'main':
-from ultralytics import YOLO
-import os
-os.environ["GIT_PYTHON_REFRESH"] = "quiet"
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+     python test.py 
+     from ultralytics import YOLO
+     import os
+     os.environ["GIT_PYTHON_REFRESH"] = "quiet"
+     os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-if __name__ == '__main__':
+    if __name__ == '__main__':
     # Load the trained model (best.pt file)
     model = YOLO('')  # Path to the trained model (best.pt)
     metrics = model.val(split='test', data='CR7-DET.yaml')  # Evaluate the model on the test set using CR7-DET.yaml configuration
