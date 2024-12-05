@@ -36,8 +36,11 @@ These YAML files can be found in the following directory: SC-YOLOv8/ultralytics/
 You must split your dataset into three parts: training set, testing set, and validation set. Place the images into the respective folders and update the paths accordingly. For example:
 
 train:  E:/data/dataest/CR7-DET/images/train/
+
 test:   E:/data/dataest/CR7-DET/images/test/
+
 val:    E:/data/dataest/CR7-DET/images/val/
+
 Make sure the paths to your datasets in the YAML file match the folder structure you’ve created on your local machine.
 ## 2.3 Train the Model
 To start training the model, use the train.py
