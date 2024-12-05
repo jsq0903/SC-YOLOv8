@@ -55,7 +55,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 if __name__ == '__main__':
     
     # Load model with pretrained weights or configuration file
-    model = YOLO('yolov8n.pt')   # Using pretrained weights (can also choose yolov8n.yaml for architecture)
+    model = YOLO('yolov8n.pt')   # Using pretrained weights 
     
     # Alternatively, load a specific model configuration
     model = YOLO('yolov8-our.yaml')  # For our SC-YOLOv8, path: SC-YOLOv8/ultralytics/cfg/models/v8/yolov8-our.yaml
@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     # Start training the model with specified parameters
     results = model.train(
-        data='lengzha.yaml',       # Path to dataset YAML:SC-YOLOv8/ultralytics/cfg/datasets/lengzha.yaml(GC10-DET.yaml or NEU-DET.yaml)
+        data='CR7-DET.yaml',       # Path to dataset YAML:SC-YOLOv8/ultralytics/cfg/datasets/CR7-DET.yaml(GC10-DET.yaml or NEU-DET.yaml)
         epochs=200,                # Number of epochs to train for
         batch_size=16              # Batch size
     )                              #additional hyperparameters and settings from SC-YOLOv8/ultralytics/cfg/default.yaml
