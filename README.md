@@ -43,7 +43,7 @@ val:    E:/data/dataest/CR7-DET/images/val/
 
 Make sure the paths to your datasets in the YAML file match the folder structure you’ve created on your local machine.
 ## 2.3 Train the Model
-To start training the model, use the train.py
+python train.py
 
 from ultralytics import YOLO
 import os
@@ -69,8 +69,8 @@ if __name__ == '__main__':
     )                              #additional hyperparameters and settings from SC-YOLOv8/ultralytics/cfg/default.yaml
                                                                               
 ## 2.4 Evaluate the model
-    python test.py 
-
+python test.py 
+if name == 'main':
 from ultralytics import YOLO
 import os
 os.environ["GIT_PYTHON_REFRESH"] = "quiet"
